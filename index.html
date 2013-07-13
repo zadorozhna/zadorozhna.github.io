@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Zadorozhna.github.io by zadorozhna</title>
+    <title>Le Corbusier by Anastasiya Zadorozhna</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -17,8 +17,12 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Zadorozhna.github.io</h1>
-        <p>final-project</p>
+        <h1>Le Corbusier, Jeanneret, Perriand</h1>
+        <br>
+        <h3>Computational Graphic final-project 2012-2013</h3>
+        <br>
+        <p>Student: Anastasiya Zadorozhna</p>
+        <p>Student ID: 418276</p>
         <p class="view"><a href="https://github.com/zadorozhna">View the Project on GitHub <small>zadorozhna</small></a></p>
         <ul>
           <li class="single"><a href="">View On <strong>GitHub</strong></a></li>
@@ -26,42 +30,277 @@
       </header>
       <section>
         <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <br>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Le Corbusier the Architect. History.</h3>
+<br>
+<img alt="autori" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/cpj.jpg">
+<br>
+<br>
+<p>Charles-Edouard Jeanneret, Le Corbusier (October 6, 1887 - August 27, 1965).</p>
+<p>Le Corbusier adopted his pseudonym in the 1920s, allegedly deriving it in part from the name of his ancestor (an altered form of his maternal grandfather's name, Lecorbésier), reflecting his belief that anyone could reinvent himself. His career spanned five decades and he is among the most important architects of the XX century. He was a pioneer in studies of modern high design and was dedicated to provide better living conditions for the residents of crowded cities. </p>
+<p>Le Corbusier began experimenting with furniture design in 1928 after inviting the architect, Charlotte Perriand, to join his studio. His cousin, Pierre Jeanneret, also collaborated on many of the designs. 
+  <br>
+  All the creations have an avant-gard attitude and the systems used are rational with extremly simple forms and shapes based on functional logic. </p>
+<p>The work of the revolutionary thought of Le Corbusier is completed by Le Modulor. It was written during the Second World War and exposes the most impressive philosophical theory of the author. Le Modulor consists of a scale of magnitudes whose influences date back to the study of the proportions of the human body. This theory should be used not only in the construction of living spaces, but must be applied to every accessory: a shelf, a  simple chair or a work of design.</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<h3>
+  <br>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>The Project.</h3>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<strong><p style="color:red;">For each object I will describe some of the most significant components.</p></strong>
+
+<h4>LC15 TABLE DE CONFÉRENCE</h4>
+<br>
+<img alt="lc15_reale" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/lc15_reale.jpg">
+<br>
+<br>
+<p>
+Year: 2010
+<br>
+Year of drawing: 1958
+<br>
+Collection: LE CORBUSIER
+</p>
+<p>Le Corbusier designed this table in 1958 for Atelier Le Corbusier in Paris. It is intended for both home décor and conferences, with an organic structure that is also rational at the same time. This conference table is an exquisite masterclass in simplicity. The key to the project is the use of two geometrical figures set one against the other.
+<br>
+The circle is a sturdy horizontal tabletop in oak and the cube is made of steel tubes, which form a weave of perpendicular levels with outstanding aesthetic value. The top is available with a natural matte finish. Legs in lacquered steel in the LC colors (gloss grey, gloss green and matte black). 
+Ø 72.8" x h 28"
+</p>
+
+<br>
+<img alt="lc15_collage" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/collage_lc15.jpg">
+<br>
+<br>
+
+<p><strong>The functions used:</strong>
+  <br>
+  - cylinder
+  <br>
+  - CUBIC_HERMITE
+  <br>
+  - STRUCT
+  <br>
+  - T, R
+  <br>
+  - COLOR
+</p>
+
+<p><strong>The angles of the steel structure.</strong></p>
+
+<pre><code>var curveMapping1 = CUBIC_HERMITE(S0)([[0,0,-0.5],[0.3,0,0],[0,0,0.75],[0.75,0,0]]);
+var curveMapping2 = CUBIC_HERMITE(S0)([[0.2,0,-0.5],[0.3,0,-0.2],[0,0,0.25,],[0.25,0,0]]);
+var curve1 = MAP(CUBIC_HERMITE(S1)([curveMapping1,curveMapping2,[0,0.39,0],[0,-0.39,0]]))(domain);
+var curve2 = MAP(CUBIC_HERMITE(S1)([curveMapping1,curveMapping2,[0,-0.39,0],[0,0.39,0]]))(domain);
+var curveLeft1 = STRUCT([curve1, curve2]);
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<br>
+<img alt="component_lc15" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/component_lc15.png">
+<br>
+<br>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+  <br>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Le Corbusier, Jeanneret, Perriand.</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>In 1922, Le Corbusier began working in the new rue de Sèvres, Paris, atelier with his cousin Pierre Jeanneret with whom he shared research projects and design criteria in a profound and life-long professional relationship.
+In October 1927, the pair decided to draw on the contribution of a young architect who had already begun to establish a reputation on the architectural scene of the time: Charlotte Perriand. 
+Their collaboration lasted through to 1937 and was extremely fruitful, especially in the field of furniture design. The partnership was highly significant, both in terms of the cultural weight of their achievements and their professional successes.
+The resulting designs were of great intellectual value and considerable commercial success.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<h4>CASIERS STANDARD</h4>
+<br>
+<img alt="casiers_reale" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/casiers_reale.jpg">
+<br>
+<br>
+<p>
+Year: 1978
+<br>
+Year of drawing: 1925
+<br>
+Collection: LE CORBUSIER
+</p>
+<p>The "Casiers Standard" are modular container units, available in different depths and widths and in one height with possibility of superimposition.
+<br>
+Storage units are connected by screws to obtain multiple different configurations. Lay on the floor, overlapping each other or suspended on pilotis. Closed totally, partially or per day. Sliding doors, blinds vertical or horizontal flaps and upper or lower: all available in different colors.
+</p>
+<br>
+<img alt="casiers_collage" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/collage_casiers.jpg">
+<br>
+<br>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p><strong>The functions used:</strong>
+  <br>
+  - cylinder
+  <br>
+  - SIMPLEX_GRID
+  <br>
+  - STRUCT
+  <br>
+  - T, R
+  <br>
+  - COLOR
+  <br>
+  - BEZIER
+  <br>
+  - ROTATIONAL_SURFACE
+  <br>
+  - DISK
+</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p><strong>The support.</strong></p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<pre><code>var c1 = COLOR(beige)(cylinder(0.25,1.3));
+var c2 = cylinder(0.25,0.1);
+var d2 = DOMAIN([[0,1],[0,2*PI]])([20,20]);
+var profile = BEZIER(S0)([[0.25,0,0.5],[0.5,0,0.25],[1,0,0.25],[1.5,0,0]]);
+var mapping = ROTATIONAL_SURFACE(profile);
+var surface = MAP(mapping)(d2);
+var disk = DISK(1.5)(16);
+var support1 = STRUCT([T([0,1,2])([4.25,0.6,1])(R([1,2])(-PI/2)(c1)),T([0,1,2])([4.25,0.5,1])(R([1,2])(-PI/2)(c2)),
+             T([0,2])([4.25,1])(R([1,2])(-PI/2)(COLOR(beige)(surface))),T([0,2])([4.25,1])(R([1,2])(-PI/2)(COLOR(beige)(disk)))]);
+</code></pre>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<br>
+<img alt="component_casiers" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/component_casiers.png">
+<br>
+<br>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-    <footer>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+<h4>LC13</h4>
+<br>
+<img alt="lc13_reale" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/lc13_reale.jpg">
+<br>
+<br>
+<p>
+Year: 2006
+<br>
+Year of drawing: 1931
+<br>
+Collection: LE CORBUSIER
+</p>
+<p>The design of this model was done by Le Corbusier in 1931 for the smoking carriages of the French railways.
+<br>
+The seat and back are not fastened down to the support structure. With a new link-up device the posture of the chair can be changed. Frame available in polished chrome. 
+A combination of polyurethane and polyester padding is used for thecushions.
+<br>
+Produced under license from the Foundation Le Corbusier and so indicated by a stamped signature and serial number on each model.
+</p>
+
+<br>
+<img alt="lc13_collage" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/collage_lc13.jpg">
+<br>
+<br>
+
+<p><strong>The functions used:</strong>
+  <br>
+  - cylinder
+  <br>
+  - CUBIC_HERMITE
+  <br>
+  - STRUCT
+  <br>
+  - T, R
+  <br>
+  - COLOR
+  <br>
+  - BEZIER
+  <br>
+  - EXTRUDE
+  <br>
+  - DISK
+</p>
+
+<p><strong>Pillow's support.</strong></p>
+
+<pre><code>var c0support = BEZIER(S0)([[1.5,4.6,-3],[2.2,2,-3],[2.5,2.5,-3],[3.5,2.5,-3],[4,2.7,-3]]);
+var c1support = BEZIER(S0)([[1.5,4.6,-4],[2.2,2,-4],[2.5,2.5,-4],[3.5,2.5,-4],[4,2.7,-4]]);
+var curveSupport1 = MAP(BEZIER(S1)([c0support,c1support]))(domain);
+
+var c2support = BEZIER(S0)([[1.55,4.6,-3],[2.35,2,-3],[2.5,2.55,-3],[3.5,2.55,-3],[4,2.7,-3]]);
+var c3support = BEZIER(S0)([[1.55,4.6,-4],[2.35,2,-4],[2.5,2.55,-4],[3.5,2.55,-4],[4,2.7,-4]]);
+var curveSupport2 = MAP(BEZIER(S1)([c2support,c3support]))(domain);
+
+var curveSupport3 = MAP(BEZIER(S1)([c0support,c2support]))(domain);
+var curveSupport4 = MAP(BEZIER(S1)([c1support,c3support]))(domain);
+
+var supportStructure = STRUCT([curveSupport1,curveSupport2,curveSupport3,curveSupport4]);
+</code></pre>
+
+<br>
+<img alt="component_lc13" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/component_lc13.png">
+<br>
+<br>
+
+<h4>LC1 VILLA CHURCH</h4>
+<br>
+<img alt="lc1_reale" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/lc1_villa_church_reale.jpg">
+<br>
+<br>
+<p>
+Year: 2011
+<br>
+Year of drawing: 1928-1930
+<br>
+Collection: LE CORBUSIER
+</p>
+<p>The first version, dating back to 1928, was designed specifically for the interiors of Villa Church, a residence created by Le Corbusier and Pierre Jeanneret. The interiors, were designed by Charlotte Perriand who, with supreme delicacy, adapted the details and features of the various furnishings to suit the context of the space. In this case, as evidenced in Perriand's original sketches and notes, the LC1 seat is adorned with a blue satin weave and further embellished by its comfortable padding.
+<br>
+A satin weave is also chosen for the gently tapered armrests, except towards the front where leather is used to guarantee stability against the chrome-plated frame. An elegant interpretation in which the minimalism of the armchair is softened and given a gentler, more feminine feel.
+<br>
+The structure is in polished steel. The padded seat and backrest in polyurethane.
+The armrests are wider at the front and tapered towards the back.
+<br>
+Produced under the license from the Foundation Le Corbusier and so indicated by a stamped signature and serial number on each model.
+</p>
+
+<br>
+<img alt="lc1_collage" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/collage_lc1.jpg">
+<br>
+<br>
+
+<p><strong>The functions used:</strong>
+  <br>
+  - cylinder
+  <br>
+  - CUBIC_HERMITE
+  <br>
+  - STRUCT
+  <br>
+  - T, R
+  <br>
+  - COLOR
+  <br>
+  - BEZIER
+  <br>
+  - ROTATIONAL_SURFACE
+  <br>
+  - DISK
+  <br>
+  - EXTRUDE
+  <br>
+  - POLYLINE
+</p>
+
+<p><strong>Peaks on the armrest.</strong></p>
+
+<pre><code>var d2 = DOMAIN([[0,1],[0,2*PI]])([20,20]);
+
+var profile1 = BEZIER(S0)([[0,0,0.05],[0.1,0,0]]);
+var mapping1 = ROTATIONAL_SURFACE(profile1);
+var surface1 = MAP(mapping1)(d2);
+
+var profile2 = BEZIER(S0)([[0,0,-0.05],[0.1,0,0]]);
+var mapping2 = ROTATIONAL_SURFACE(profile2);
+var surface2 = MAP(mapping2)(d2);
+
+var peakStruct = STRUCT([T([1,2])([5.65,0.6])(surface1),T([0,1,2])([6.5,5.65,0.6])(surface1),T([1,2])([5.65,-5.5])(surface2),
+               T([0,1,2])([6.5,5.65,-5.5])(surface2)]);
+</code></pre>
+
+<br>
+<img alt="component_lc1" src="/Users/anastasiyazadorozhna/Desktop/zadorozhna.github.io/images/component_lc1.png">
+<br>
+<br>
     
   </body>
 </html>
